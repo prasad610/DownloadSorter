@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
-import os, signal
-import subprocess
+import os
 from datetime import datetime as todaydate
 import json
 import configparser
 import sys
-from typing import Dict
 
 config = configparser.ConfigParser()
 
 try:
     path = os.path.join(os.getcwd(),"config.ini")
-    print(path)
     data = config.read(path)
     if(len(data) == 0):
         raise FileNotFoundError
