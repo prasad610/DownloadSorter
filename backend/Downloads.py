@@ -39,7 +39,6 @@ class Download():
             self.downloadFolderPath, self.indexFile)
 
         os.chdir(self.downloadFolderPath)
-
         # Used for setting folder name
         try:
             self.date = todaydate.now().strftime(config.get("DEFAULT", "folderName"))
@@ -48,10 +47,10 @@ class Download():
             exit(1)
         # List of files and folders in the directory
         self.files = os.listdir(path=self.downloadFolderPath)
+        
         self.indexContent = self.readFile()
-        # self.segregateFiles()
-
-        # self.writeFile()
+        self.segregateFiles()
+        self.writeFile()
 
     def segregateFiles(self):
         """ 
