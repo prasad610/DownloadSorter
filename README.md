@@ -2,7 +2,9 @@
 
 ## Requirements
 
-- Python3
+- Python3.9
+- nodejs
+- npm
 
 ## How to use
 
