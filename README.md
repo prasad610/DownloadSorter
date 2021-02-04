@@ -2,9 +2,9 @@
 
 ## Requirements
 
-- Python3.9
-- nodejs
-- npm
+- Python 3.9
+- nodejs v12.19.0
+- npm 6.14.10
 
 ## How to use
 
